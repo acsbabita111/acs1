@@ -149,6 +149,18 @@ h3{font-size:1.14rem;margin-bottom:9px}
   padding:10px 13px;font-weight:800;
 }
 
+.verify-btn{order:3;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 18px;border-radius:999px;background:var(--gold);color:var(--navy);font-weight:900;font-size:.95rem;text-decoration:none;white-space:nowrap;box-shadow:0 6px 16px rgba(217,164,59,.28)}
+.verify-btn:hover{background:#e6b552}
+.nav-links{order:2;margin-left:auto}
+.photo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:36px}
+.photo-grid a{display:block;border-radius:12px;overflow:hidden;background:var(--soft)}
+.photo-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform .2s ease}
+.photo-grid a:hover img{transform:scale(1.04)}
+.photo-note{margin-top:16px;color:var(--muted);font-size:1rem}
+@media(max-width:1050px){.photo-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:900px){.nav{flex-wrap:wrap;padding:10px 0;gap:10px 16px}.menu-btn{order:2}.verify-btn{order:3;width:100%}.nav.open .nav-links{top:100%}.photo-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+
 /* Hero */
 .hero{
   padding:104px 0 88px;
@@ -373,12 +385,15 @@ h3{font-size:1.14rem;margin-bottom:9px}
       </div>
     </a>
 
+    <a class="verify-btn" href="https://acslearn.com/verify/" target="_blank" rel="noopener">Verify Certificate</a>
+
     <button class="menu-btn" type="button" aria-label="Open navigation" onclick="document.getElementById('mainNav').classList.toggle('open')">Menu</button>
 
     <nav class="nav-links" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#model">Training Model</a>
       <a href="#courses">Courses</a>
+      <a href="#photos">Photos</a>
       <a href="#network">Network</a>
       <a href="#ecosystem">Websites</a>
       <a href="#contact">Contact</a>
@@ -569,6 +584,58 @@ h3{font-size:1.14rem;margin-bottom:9px}
   </div>
 </section>
 
+<section id="photos" class="section center">
+  <div class="container">
+    <div class="eyebrow">Photo Gallery</div>
+    <h2>Applied Computer School in pictures</h2>
+    <p class="lead">42 photos from our centres: labs, classes, batches and ceremonies. Tap a photo to see it larger.</p>
+    <div class="photo-grid">
+      <a href="photos/acs-01.jpg" target="_blank" rel="noopener"><img src="photos/acs-01.jpg" alt="Applied Computer School photo 1" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-02.jpg" target="_blank" rel="noopener"><img src="photos/acs-02.jpg" alt="Applied Computer School photo 2" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-03.jpg" target="_blank" rel="noopener"><img src="photos/acs-03.jpg" alt="Applied Computer School photo 3" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-04.jpg" target="_blank" rel="noopener"><img src="photos/acs-04.jpg" alt="Applied Computer School photo 4" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-05.jpg" target="_blank" rel="noopener"><img src="photos/acs-05.jpg" alt="Applied Computer School photo 5" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-06.jpg" target="_blank" rel="noopener"><img src="photos/acs-06.jpg" alt="Applied Computer School photo 6" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-07.jpg" target="_blank" rel="noopener"><img src="photos/acs-07.jpg" alt="Applied Computer School photo 7" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-08.jpg" target="_blank" rel="noopener"><img src="photos/acs-08.jpg" alt="Applied Computer School photo 8" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-09.jpg" target="_blank" rel="noopener"><img src="photos/acs-09.jpg" alt="Applied Computer School photo 9" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-10.jpg" target="_blank" rel="noopener"><img src="photos/acs-10.jpg" alt="Applied Computer School photo 10" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-11.jpg" target="_blank" rel="noopener"><img src="photos/acs-11.jpg" alt="Applied Computer School photo 11" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-12.jpg" target="_blank" rel="noopener"><img src="photos/acs-12.jpg" alt="Applied Computer School photo 12" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-13.jpg" target="_blank" rel="noopener"><img src="photos/acs-13.jpg" alt="Applied Computer School photo 13" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-14.jpg" target="_blank" rel="noopener"><img src="photos/acs-14.jpg" alt="Applied Computer School photo 14" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-15.jpg" target="_blank" rel="noopener"><img src="photos/acs-15.jpg" alt="Applied Computer School photo 15" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-16.jpg" target="_blank" rel="noopener"><img src="photos/acs-16.jpg" alt="Applied Computer School photo 16" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-17.jpg" target="_blank" rel="noopener"><img src="photos/acs-17.jpg" alt="Applied Computer School photo 17" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-18.jpg" target="_blank" rel="noopener"><img src="photos/acs-18.jpg" alt="Applied Computer School photo 18" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-19.jpg" target="_blank" rel="noopener"><img src="photos/acs-19.jpg" alt="Applied Computer School photo 19" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-20.jpg" target="_blank" rel="noopener"><img src="photos/acs-20.jpg" alt="Applied Computer School photo 20" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-21.jpg" target="_blank" rel="noopener"><img src="photos/acs-21.jpg" alt="Applied Computer School photo 21" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-22.jpg" target="_blank" rel="noopener"><img src="photos/acs-22.jpg" alt="Applied Computer School photo 22" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-23.jpg" target="_blank" rel="noopener"><img src="photos/acs-23.jpg" alt="Applied Computer School photo 23" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-24.jpg" target="_blank" rel="noopener"><img src="photos/acs-24.jpg" alt="Applied Computer School photo 24" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-25.jpg" target="_blank" rel="noopener"><img src="photos/acs-25.jpg" alt="Applied Computer School photo 25" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-26.jpg" target="_blank" rel="noopener"><img src="photos/acs-26.jpg" alt="Applied Computer School photo 26" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-27.jpg" target="_blank" rel="noopener"><img src="photos/acs-27.jpg" alt="Applied Computer School photo 27" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-28.jpg" target="_blank" rel="noopener"><img src="photos/acs-28.jpg" alt="Applied Computer School photo 28" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-29.jpg" target="_blank" rel="noopener"><img src="photos/acs-29.jpg" alt="Applied Computer School photo 29" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-30.jpg" target="_blank" rel="noopener"><img src="photos/acs-30.jpg" alt="Applied Computer School photo 30" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-31.jpg" target="_blank" rel="noopener"><img src="photos/acs-31.jpg" alt="Applied Computer School photo 31" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-32.jpg" target="_blank" rel="noopener"><img src="photos/acs-32.jpg" alt="Applied Computer School photo 32" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-33.jpg" target="_blank" rel="noopener"><img src="photos/acs-33.jpg" alt="Applied Computer School photo 33" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-34.jpg" target="_blank" rel="noopener"><img src="photos/acs-34.jpg" alt="Applied Computer School photo 34" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-35.jpg" target="_blank" rel="noopener"><img src="photos/acs-35.jpg" alt="Applied Computer School photo 35" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-36.jpg" target="_blank" rel="noopener"><img src="photos/acs-36.jpg" alt="Applied Computer School photo 36" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-37.jpg" target="_blank" rel="noopener"><img src="photos/acs-37.jpg" alt="Applied Computer School photo 37" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-38.jpg" target="_blank" rel="noopener"><img src="photos/acs-38.jpg" alt="Applied Computer School photo 38" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-39.jpg" target="_blank" rel="noopener"><img src="photos/acs-39.jpg" alt="Applied Computer School photo 39" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-40.jpg" target="_blank" rel="noopener"><img src="photos/acs-40.jpg" alt="Applied Computer School photo 40" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-41.jpg" target="_blank" rel="noopener"><img src="photos/acs-41.jpg" alt="Applied Computer School photo 41" width="640" height="480" loading="lazy"></a>
+      <a href="photos/acs-42.jpg" target="_blank" rel="noopener"><img src="photos/acs-42.jpg" alt="Applied Computer School photo 42" width="640" height="480" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
 <section id="network" class="section soft center">
   <div class="container">
     <div class="eyebrow">Physical Network</div>
@@ -665,6 +732,7 @@ h3{font-size:1.14rem;margin-bottom:9px}
       <a href="https://acslearn.com/" target="_blank" rel="noopener">ACSLEARN™</a>
       <a href="https://acs-aidigitalmaster.org/" target="_blank" rel="noopener">ACS-AI DIGITAL MASTER™</a>
       <a href="https://acsaarthi.com/" target="_blank" rel="noopener">ACSAARTHI™</a>
+      <a href="https://acslearn.com/verify/" target="_blank" rel="noopener">Verify Certificate</a>
     </div>
     <div class="ffg-common">
       <strong>Registered Address:</strong> &quot;Laxmiganga&quot;, Bhutauli Malpa, Ward: 17, Chautham, Khagaria, Bihar 851201<br>
